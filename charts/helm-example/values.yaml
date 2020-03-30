@@ -4,12 +4,12 @@
 replicaCount: 1
 image:
   pullPolicy: IfNotPresent
-  repository: r.cfcr.io/kostis-codefresh/helm-sample-app-go
+  repository: r.cfcr.io/streamion/helm-sample-app-go
 service:
   name: my-example-helm-app
   type: LoadBalancer
   externalPort: 80
-  internalPort: 8080
+  internalPort: 4000
 resources:
   limits:
     cpu: 100m

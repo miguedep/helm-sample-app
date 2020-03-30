@@ -5,5 +5,5 @@ RUN CGO_ENABLED=0 GOOS=linux go build -o bin/sample src/sample/trivial-web-serve
 FROM scratch
 COPY --from=build-env /go/bin/sample /app/sample
 
-EXPOSE 8080
+EXPOSE 4000
 CMD ["/app/sample"]
